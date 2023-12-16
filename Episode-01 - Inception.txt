@@ -1,0 +1,47 @@
+Q.1 What is Emmet.
+===================
+-> Emmet is a tool that allows developers to write and expand shorthand syntax for HTML, XML and other languages.
+   It is designed to speed up the process for writing and editing code by providing set of shortcuts and 
+   abbrevations.
+
+Q.2 Difference between library and framework.
+==============================================
+-> A library is a pre-written code that can be used to perform common tasks or functions.
+   library are typically called or imported into our project.
+
+   A framework is a set of conventions and tools for building and organizing code.
+   A framework provides structure and set of guidelines for developing a specific type of application.
+
+Q.3 What is CDN ?
+=================
+-> CDN(Content Delivery Network) is a network of servers in different geographical locations that are used to deliver
+   content to the users based on their gepgraphic locations.
+   CNDs are used to improve performance & avaibility of websites and applications by serving content from servers that 
+   are closed to the user.
+   
+Q.4 Why is React known as React ?
+=================================
+-> because it was designed to help developers to react to changes in the state of an application, by efficient rendering
+   and update UI in response to those changes.
+
+Q.5 What is cross origin in script Tag ?
+=======================================
+-> is an attribute used to indicate that the script should be loaded from a different origin than the current page. 
+   It is used to allowed web pages to load resources from a different domain.
+
+Q.6 What is difference between React and ReactDOM ?
+===================================================
+-> React is library for building userInterfaces,
+   ReactDOM is library for interacting with DOM and rendering react component to the web page.
+
+Q.7 What is the difference between react.development.js and react.production.js.
+================================================================================
+-> r.d.s is used during development & includes additional tools and debugging tools that can be helpful when building and testing
+   react applications.
+   r.p.s is used for production environment & optimized for performance and size. It does not include additional debugging tools.
+
+Q.8 what is async and defer ?
+=============================
+-> In Async, HTML parsing goes on & script are fetch in async manner parallely, as soon as scripts are available the script is
+   executed and after that HTML parsing continues.
+   In Defer, HTML parsing goes on, scripts are fetch in parallel and only executes when HTML parsing is completed.
