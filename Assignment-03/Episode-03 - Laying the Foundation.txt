@@ -1,0 +1,26 @@
+Q.1 what is `JSX` ?
+===================
+-> `JSX` stands for Javascript XML. `JSX` is not html inside Javascript. `JSX` has HTML look like syntax.
+   `JSX` uses React.createElement() behind the scenes. Babel converts `JSX` to React.createElement().
+
+Q.2 Superpowers of `JSX` ?
+==========================
+-> - Developer Experience
+   - Syntatical Sugar
+   - Redaibility
+   - Less Code
+   - No Repetition
+   - Maintainability
+
+Q.3 What is type attribute in script tag ? what options can I use there ?
+=========================================================================
+-> The type attribute in <script> tag specifies which scripting language is used within that particular script block.
+   Its primary role is to indicate MIME type (Multipurpose Internet Mail Extension) of the scripting language.
+   Other options for the type attribute includes `modules` for javascript modules.
+
+Q.4 {TitleComponent} vs {<TitleComponent />} vs {<TitleComponent></TitleComponent>} in JSX.
+===========================================================================================
+-> {TitleComponent} represents a reference to the TitleComponent assuming it is variable or component.
+   {<TitleComponent />} && {<TitleComponent><TitleComponent />} both will render TitleComponent as 
+   an instance within JSX. They both will create instance of an TitleComponent.
+   
