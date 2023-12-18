@@ -1,0 +1,79 @@
+Q.1 What is `npm`.
+===================
+-> npm is used to manage the packages that are already installed to run the code.
+
+Q.2 what is `parcel/webpack` ? why do we need it.
+==============================================
+-> `parcel` is a bundler that builds dev, local host, HMR, code splitting etc.
+   `webpack` is also a bundler similar to `parcel`. It helps in image optimization, Tree shaking, file 
+    watching algorithms, consistent hashing etc.
+
+Q.3 What is `.parcel-cache` ?
+=============================
+-> `.parcel-cache` is a file which gets created when we run our program for the first time. It stores the
+   latest results, so that it reduces build time when we run the code in future.
+   
+Q.4 Why is `npx`?
+==================
+-> `npx` is a node package extension that can be used to installed for the production build.
+
+Q.5 What is difference between `dependencies` and `devDependencies` ?
+=====================================================================
+-> `dependencies` are packages required for both development and production.
+   `devDependencies` are packages required only for development(like testing frameworks, build tools etc)
+
+Q.6 What is `Tree shaking` ?
+============================
+-> `Tree shaking` is a technique in javascript and react used to eliminate unused code from your final bundle
+   during build process. It helps to optimize bundle size by removing any modules or functions that are
+   not used in your codebase.
+
+Q.7 What is `HMR` ?
+===================
+-> `Hot Module Replacement` is a feature that allows you to make changes to your code and see those changes instantly
+    without a full page reload.
+
+Q.8 List 5 features of parcel & describe any 3 of them ?
+=====================================================
+-> 1. Tree shaking
+   2. Hot Module Replacement
+   3. Zero Configuration - Making it easy to ste up and start using right away.
+   4. code splitting - It analyze the project and splits bundels into smaller and more manageable chunks.
+   5. Built in Asset support - supports assets like HTML, CSS, javascript, images etc
+
+Q.9 What is `.gitignore` what should we add and not add on to it?
+=================================================================
+-> `.gitignore` is a Configuration file used by git to deteremine which files and directories to ignore
+   while tracking changes in the project.
+   you should add - compiled code, dependencies, sensitive information, temporary files etc.
+   you should not add - imp configuration files, source code.
+
+Q.10 what is the difference between `package.json` and `package-lock.json`.
+===========================================================================
+-> `package.json` defines the project meta data and its dependencies.
+   `package-lock.json` defines detail record of the exact versions of dependencies installed,
+   ensuring consistency in project's environment.
+
+Q.11 why should I not modify `package-lock.json`.
+=================================================
+-> It can lead to inconsistencies and potentially introduce errors or conflicts in the project environment.
+
+Q.12 what is `node_modules`? Is it a good idea to push that on git.
+===================================================================
+-> `node_modules` is a directory created by npm to store all the dependencies required by our project.
+   It contains all the codes from external packages specified in `package.json` file.
+   No, 
+   Size - size is large. It can increase size of repository. 
+   Reproducibilty - `package.json` & `package-lock.json` contains dependencies & their versions.
+   Version-control - It maintains cleaner repository.
+
+Q.10 what is the `dist` folder.
+===============================
+-> `dist` folder contains optimized, minified and concatenated files like HTML, CSS and javascript
+   and other assets. These files are usually meant for production use, where they are more efficient
+   for browsers to load and execute.
+
+Q.10 what is `browsersList`.
+============================
+-> `browsersList` is a configuration file used in web development to specify the range of browsers
+   that your application supports. 
