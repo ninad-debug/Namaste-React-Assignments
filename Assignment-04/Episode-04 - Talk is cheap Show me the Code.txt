@@ -1,0 +1,75 @@
+Q.1 Is `JSX` mandatory for React ?
+==================================
+-> No, not mandatory but it makes easy writing React components.
+   However, React can also be written in pure Javascript without `JSX`.
+
+Q.2 Is `ES6` mandatory for React ?
+==================================
+-> No, not mandatory but using `ES6` it can make your React code more short and readable
+   by using Arrow functions, classes, destructuring etc
+
+Q.3 How can I write comments in React ?
+=====================================
+-> {/* This is a comment in React */}
+
+Q.4 What is <ReactFragment></ReactFragment> and <></> ?
+=======================================================
+-> <ReactFragment></ReactFragment> is long syntax and <></> is short syntax and more cleaner way which are use to wrap components
+   without introducing unnecessary nodes in the DOM structure.
+
+Q.5 What is `virtual DOM` ?
+===========================
+-> `Virtual DOM` is a visual representation of the actual DOM (Document Object Model) that browser uses to render web pages
+
+Q.6 What is `Reconciliation` in React ?
+=======================================
+-> When change occurs in a React component, React first updates its virtual DOM, then it performs a process known as 
+   `Reconciliation`, where it compares the new virtual DOM with previous one. It identifies the differences between two
+   DOM's and updates the real DOM by optimized way.
+
+Q.7 What is React fibre ?
+==================================
+-> It is an internal reimplementation of React's core algorithm, which handles the way React adapt changes and 
+   update the UI. It's designed to improve performance by making application more responsive by breaking 
+   rendering work into small chunks.
+
+Q.8 Why we need Keys in React? When do we need keys in React ?
+==============================================================
+-> Keys in React are used to identify and manage the state of indiviual components in lists or array of elements.
+   It helps React to identify which items have changed, added or been removed.
+   You need keys in React when you're dynamically rendering multiple components within lists or collection.
+
+Q.9 Can we use Index as keys in React ?
+=======================================
+-> Yes, we can use but it is not recommended to use because if the list item's order might change or items may be added,
+   or removed, using the index as the key might cause issue with component state and Reconciliation.
+   It can lead to poor performance and incorrect rendering.
+
+Q.10 What is `props` in React ?
+===============================
+-> `props` means properties is a way to pass data from Parent Component to child Component. They are read only.
+   ways to ->
+
+   1. Direct Props: 
+        <ChildComponent name="Ninad" age="23"/>
+
+   2. Dynamic Props:
+        const name="React";
+        const age = 23;
+        <ChildComponent name={name} age={age} />
+
+    3. Using Spread operator:
+        const personInfo = {name:"React", age:23}
+        <ChildComponent {...personInfo} />
+
+    4. passing callback function:
+    <ChildComponent onClick={handleClick} />
+
+    5. Default Props:
+    function ChildComponent({name="Ninad"}){}
+
+Q.11 What is Config Driven UI ?
+===============================
+-> It refers to an apporach where the UI of an application is primarily determined and controlled by configuration
+   rather than hard-coded logic. In this method, the structure, behaviour and appearance of the UI elements are 
+   defined by external configurations or data.
